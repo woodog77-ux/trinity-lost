@@ -132,6 +132,34 @@
             letter-spacing: 1px;
             text-shadow: 0 1px 3px rgba(0,0,0,0.8);
         }
+                /* Video Background Container */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Cinematic dark overlay to make text crisp */
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 12, 16, 0.75);
+            z-index: -1;
+        }
+
     </style>
 </head>
 <body>
